@@ -88,9 +88,7 @@ public class PlayerController implements Listener {
             if(i > Success_Rate){
                 if(Is_GrowNecessary && growNecessary_Count.get(player) < GrowNecessary_Count){
                     growNecessary_Count.put(player,growNecessary_Count.get(player)+1);
-                    player.spigot().sendMessage(ChatMessageType.CHAT, new TextComponent("次数+1 目前是:"+growNecessary_Count.get(player) ));
                 }else if(Is_GrowNecessary && growNecessary_Count.get(player) == GrowNecessary_Count){
-                    player.spigot().sendMessage(ChatMessageType.CHAT, new TextComponent("到次数了！"));
                     return true;
                 }
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(Failed));
