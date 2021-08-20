@@ -1,0 +1,14 @@
+name: SneakGrow
+version: 1.0.1
+main: com.github.lewis2333.sneakgrow.Main
+api-version: 1.16
+
+commands:
+  SneakGrow:
+    description: "[SneakGrow] 一个催熟的小插件owo"
+permissions:
+  SneakGrow.admin:
+    description: "[SneakGrow] 管理员使用的指令~"
+    default: op
+  SneakGrow.use:
+    default: true
