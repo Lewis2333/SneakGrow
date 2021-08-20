@@ -1,5 +1,5 @@
 SneakGrow:
-  #催熟面朝玩家的距离
+  #催熟面朝玩家的检测距离
   Center: 5
   #催熟成功后使用间隔
   Delay: 30
@@ -7,9 +7,27 @@ SneakGrow:
   Success_Rate: 0.35
   #一回合能催几次
   Max_Count: 5
-  #是否开启必然性催熟
-  Is_GrowNecessary: true
-  #必然催熟次数
-  GrowNecessary_Count: 7
+  #是否开启玩家自由选择模式[玩家可自由选择是否开启催熟功能]
+  Player_Choice: true
+#保底模式[不得同时开启两个模式]
+  LuckMode:
+    #是否开启保底催熟[含催熟失败与成功，失败会增加计时次数]
+    enabled: false
+    #催熟到几次会触发保底
+    GrowNecessary_Count: 7
+#常规模式[不得同时开启两个模式]
+  CommonMode:
+    #是否开启定次催熟[次数到后进行一次性催熟，含催熟失败与成功，失败不会增加计时次数]
+    enabled: true
+    #定时催熟次数
+    GrowCommon_Count: 5
+    #是否开启连续按shift进行催熟
+    Shift_Enabled: true
+    #如果为true 玩家必须在几秒内完成连续动作
+    Shift_Time: 10
+
+
+
+
 
 

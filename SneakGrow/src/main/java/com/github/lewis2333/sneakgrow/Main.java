@@ -7,6 +7,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import static com.github.lewis2333.sneakgrow.Utils.ConfigManner.loadConfig;
+import static com.github.lewis2333.sneakgrow.Utils.ConfigManner.testConfig;
+import static com.github.lewis2333.sneakgrow.Utils.GrowMode.modeController;
 
 
 /**
@@ -23,7 +25,9 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new PlayerController(),this);
         saveResource("Settings.yml",false);
         saveResource("Message.yml",false);
+        testConfig();
         loadConfig();
+        modeController();
 
     }
 

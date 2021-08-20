@@ -10,3 +10,5 @@ permissions:
   SneakGrow.admin:
     description: "[SneakGrow] 管理员使用的指令~"
     default: op
+  SneakGrow.use:
+    default: true
